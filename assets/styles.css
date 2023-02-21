@@ -315,10 +315,6 @@ button {
     grid-row: 2/3;
   }
 
-  .offcanvas {
-    display: none;
-  }
-
   .main-article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -361,5 +357,5 @@ button {
 
 /* Utis */
 .d-none {
-  display: none;
+  display: none !important;
 }
