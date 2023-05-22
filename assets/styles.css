@@ -347,6 +347,64 @@ button {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
+
+  .navbar__toggler {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+
+  .navbar__nav {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .navbar__link {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    font-size: 1rem;
+  }
+
+  .navbar__link:hover {
+    color: var(--soft-orange);
+  }
+
+  .offcanvas {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: none;
+  }
+
+  .offcanvas__side {
+    width: auto;
+    height: auto;
+    position: static;
+  }
+
+  .offcanvas__side .navbar__close {
+    position: static;
+  }
+
+  .offcanvas__side .navbar__nav {
+    position: static;
+  }
+
+  .offcanvas__side .navbar__link {
+    font-weight: 400;
+  }
+
+  .navbar__nav {
+    flex-direction: row;
+  }
+
+  .navbar__close {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -358,4 +416,10 @@ button {
 /* Utis */
 .d-none {
   display: none !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .d-block--lg {
+    display: block !important;
+  }
 }
